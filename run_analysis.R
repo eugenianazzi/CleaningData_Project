@@ -2,9 +2,9 @@ library(data.table)
 library(dplyr)
 
 #download .zip and unzip
-# url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# download.file(url, "Datasets", method = "curl")
-# unzip("Datasets")
+url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(url, "Datasets", method = "curl") #Linux SO
+unzip("Datasets")
 
 features <- fread("UCI HAR Dataset/features.txt")
 df.test <- fread("UCI HAR Dataset/test/X_test.txt")
